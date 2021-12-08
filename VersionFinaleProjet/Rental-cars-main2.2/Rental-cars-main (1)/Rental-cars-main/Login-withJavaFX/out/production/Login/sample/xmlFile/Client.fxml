@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="542.0" prefWidth="1000.0" style="-fx-background-color: #4F5050;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ClientController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="9.0" prefHeight="527.0" prefWidth="196.0">
+         <children>
+            <Button fx:id="btn_Ajout_Client" layoutX="33.0" layoutY="155.0" mnemonicParsing="false" onAction="#Handle_Ajout_Client" prefHeight="33.0" prefWidth="117.0" styleClass="button_interface" stylesheets="@../style.css" text="Ajouter" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" />
+            <Button fx:id="btn_Refresh_Client" layoutX="33.0" layoutY="247.0" mnemonicParsing="false" onAction="#Handle_Refresh_Client" prefHeight="33.0" prefWidth="117.0" styleClass="button_interface" stylesheets="@../style.css" text="Refresh" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" />
+            <Button fx:id="btn_Supprimer_Client" layoutX="52.0" layoutY="378.0" mnemonicParsing="false" onAction="#Handle_Supprimer_Client" prefHeight="33.0" prefWidth="132.0" styleClass="button_interface" stylesheets="@../style.css" text="Supprimer" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="12.0" />
+            <TextField fx:id="Num_Supp_Client" layoutX="9.0" layoutY="378.0" prefHeight="33.0" prefWidth="39.0" promptText="Numero" />
+            <Label layoutX="28.0" layoutY="14.0" prefHeight="59.0" prefWidth="132.0" stylesheets="@../style.css" text="Client">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="Table_Client" layoutX="264.0" layoutY="12.0" prefHeight="520.0" prefWidth="722.0">
+         <columns>
+            <TableColumn fx:id="col_Num" prefWidth="115.0" text="Numero" />
+            <TableColumn fx:id="col_Nom" prefWidth="149.0" text="Nom" />
+            <TableColumn fx:id="col_Prenom" prefWidth="138.0" text="Prenom" />
+            <TableColumn fx:id="col_CIN" prefWidth="156.0" text="CIN" />
+            <TableColumn fx:id="col_Telephone" prefWidth="163.0" text="Telephone" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

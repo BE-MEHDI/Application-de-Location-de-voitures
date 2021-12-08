@@ -1,0 +1,3 @@
+- Gestion erreur (Interface)
+- lien entre les tables 
+-nouvelle database optimisé . 

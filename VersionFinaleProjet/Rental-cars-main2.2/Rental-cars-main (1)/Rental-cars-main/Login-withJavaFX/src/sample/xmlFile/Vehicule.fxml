@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="542.0" prefWidth="1000.0" style="-fx-background-color: #4F5050;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.VehiculeController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="9.0" prefHeight="527.0" prefWidth="196.0">
+         <children>
+            <Button fx:id="btn_Refresh_Vehicule" layoutX="33.0" layoutY="247.0" mnemonicParsing="false" onAction="#Handle_Refresh_Vehicule" prefHeight="33.0" prefWidth="117.0" styleClass="button_interface" stylesheets="@../style.css" text="Refresh" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" />
+            <Button fx:id="btn_Ajout_Vehicule" layoutX="33.0" layoutY="155.0" mnemonicParsing="false" onAction="#Handle_Ajout_Vehicule" prefHeight="33.0" prefWidth="117.0" styleClass="button_interface" stylesheets="@../style.css" text="Ajouter" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" />
+            <Button fx:id="btn_Supprimer_Vehicule" layoutX="52.0" layoutY="378.0" mnemonicParsing="false" onAction="#Handle_Supprimer_Vehicule" prefHeight="33.0" prefWidth="132.0" styleClass="button_interface" stylesheets="@../style.css" text="Supprimer" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="12.0" />
+            <TextField fx:id="id_Supp_Vehicule" layoutX="9.0" layoutY="378.0" prefHeight="33.0" prefWidth="39.0" promptText="id" />
+            <Label layoutX="28.0" layoutY="14.0" prefHeight="59.0" prefWidth="132.0" stylesheets="@../style.css" text="Vehicule">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="Table_Vehicule" layoutX="264.0" layoutY="12.0" prefHeight="520.0" prefWidth="722.0">
+        <columns>
+          <TableColumn fx:id="id_Vehicule" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="Marque_Vehicule" prefWidth="119.0" text="Marque" />
+            <TableColumn fx:id="Tarif_Vehicule" prefWidth="117.0" text="Tarif" />
+            <TableColumn fx:id="Matricule_Vehicule" prefWidth="122.0" text="Matricule" />
+            <TableColumn fx:id="Model_Vehicule" prefWidth="162.0" text="Model" />
+            <TableColumn fx:id="Dispo_Vehicule" prefWidth="126.0" text="Dispo" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

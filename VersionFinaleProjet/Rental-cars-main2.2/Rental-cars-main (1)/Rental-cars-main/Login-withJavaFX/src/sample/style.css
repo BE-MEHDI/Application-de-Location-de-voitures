@@ -1,0 +1,65 @@
+
+.loginText{
+
+
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: white;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: #4CAF50 ;
+    -fx-text-fill: white;
+
+}
+
+.loginText:hover{
+    -fx-border-color: white;
+}
+
+
+.button_login{
+    -fx-background-color: #d4a81e;
+    -fx-text-fill: white;
+    -fx-border-radius:10px;
+    
+
+}
+.button_login:hover{
+    -fx-background-color: #DAA03DFF;
+
+}
+.button_menu{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-background-radius: 30 0 0 30;
+    -fx-border-radius: 30 0 0 30;
+
+
+}
+.button_menu:hover{
+    -fx-background-color: #4CAF50;
+}
+.button:pressed{
+    -fx-background-color: transparent;
+}
+.button_interface{
+	-fx-background-color:#d4a81e ;
+	-fx-text-fill: white;
+}
+.label{
+	-fx-text-fill:white;
+	-fx-font-size:35px;
+}
+.column_title{
+	
+}
+.Titre{
+	-fx-text-fill:#4CAF50;
+	-fx-font-size:55px;
+	-fx-font-style:bold;
+}
+.back{
+	-fx-background-color: #4F5050;
+	
+	}
+

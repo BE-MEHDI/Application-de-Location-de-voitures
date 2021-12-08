@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #4F5050;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MenuController">
+   <children>
+      <HBox prefHeight="62.0" prefWidth="1000.0">
+         <children>
+            <Button fx:id="btn_Acceuil" mnemonicParsing="false" onAction="#handleAcceuilAction" styleClass="button_menu" stylesheets="@../style.css" text="Acceuil">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_Vehicule" mnemonicParsing="false" onAction="#handleVehiculeAction" styleClass="button_menu" stylesheets="@../style.css" text="Vehicules">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_Client" mnemonicParsing="false" onAction="#handleClientAction" styleClass="button_menu" stylesheets="@../style.css" text="Clients">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_Reservation" mnemonicParsing="false" onAction="#handleReservationAction" styleClass="button_menu" stylesheets="@../style.css" text="Reservation">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_Contrat" mnemonicParsing="false" onAction="#handleContratAction" styleClass="button_menu" stylesheets="@../style.css" text="Contrat">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="12.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="mainInterface" layoutX="-1.0" layoutY="62.0" prefHeight="542.0" prefWidth="1000.0">
+         <children>
+            <ImageView fitHeight="307.0" fitWidth="713.0" layoutX="137.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/acceuilvoiture.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="157.0" layoutY="25.0" prefHeight="106.0" prefWidth="720.0" text="System de Gestion de Location De Voiture" textFill="#d4a81e">
+               <font>
+                  <Font name="Arial" size="35.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

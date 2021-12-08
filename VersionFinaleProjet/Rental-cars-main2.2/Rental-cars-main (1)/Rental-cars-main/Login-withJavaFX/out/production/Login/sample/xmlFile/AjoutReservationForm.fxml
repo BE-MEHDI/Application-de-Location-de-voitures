@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #4F5050;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.AjoutReservationController">
+   <children>
+      <Label layoutX="150.0" layoutY="18.0" prefHeight="60.0" prefWidth="550.0" styleClass="Titre" stylesheets="@../style.css" text="         Reservation" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="125.0">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="132.0" layoutY="126.0" prefHeight="440.0" prefWidth="650.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0">
+         <children>
+            <AnchorPane layoutX="20.0" layoutY="14.0" prefHeight="55.0" prefWidth="565.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+               <children>
+                  <Label layoutY="13.0" prefHeight="35.0" prefWidth="132.0" text="Nom Client" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="AJNomClient" layoutX="152.0" layoutY="15.0" prefHeight="35.0" prefWidth="234.0" promptText="Entrer le Nom du Client" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="69.0" prefHeight="55.0" prefWidth="565.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="69.0">
+               <children>
+                  <Label layoutY="13.0" prefHeight="35.0" prefWidth="150.0" text="Prenom Client" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="AJPrenomClient" layoutX="152.0" layoutY="15.0" prefHeight="35.0" prefWidth="234.0" promptText="Entrer le Prenom du Client" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="124.0" prefHeight="55.0" prefWidth="565.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="124.0">
+               <children>
+                  <Label layoutY="13.0" prefHeight="35.0" prefWidth="132.0" text="Marque" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="AJMarqueReservation" layoutX="152.0" layoutY="15.0" prefHeight="35.0" prefWidth="234.0" promptText="Entrer la marque de la voiture" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="234.0" prefHeight="55.0" prefWidth="565.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <children>
+                  <Label layoutY="13.0" prefHeight="35.0" prefWidth="132.0" text="Durée" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="AJDureeReservation" layoutX="152.0" layoutY="15.0" prefHeight="35.0" prefWidth="234.0" promptText="jour" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="179.0" prefHeight="55.0" prefWidth="565.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <children>
+                  <Label layoutY="13.0" prefHeight="35.0" prefWidth="150.0" text="Matricule" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="AJMatriculeReservation" layoutX="152.0" layoutY="15.0" prefHeight="35.0" prefWidth="234.0" promptText="ex : 15478-A-36" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="btn_Enregistrer_Reservation" layoutX="489.0" layoutY="399.0" mnemonicParsing="false" onAction="#Handle_Enregistrer_Reservation" prefHeight="25.0" prefWidth="104.0" styleClass="button_login" stylesheets="@../style.css" text="Enregistrer" />
+            <AnchorPane layoutY="289.0" prefHeight="55.0" prefWidth="565.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="10.0" prefHeight="35.0" prefWidth="132.0" text="Prix" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="AJMarquePrix" layoutX="210.0" layoutY="10.0" prefHeight="35.0" prefWidth="234.0" promptText="Entrer le Prix " AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="344.0" prefHeight="55.0" prefWidth="565.0">
+               <children>
+                  <Label layoutY="13.0" prefHeight="35.0" prefWidth="132.0" text="Date" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="AJDate" layoutX="198.0" layoutY="10.0" prefHeight="35.0" prefWidth="234.0" promptText="yyyy-mm-jj" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="198.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javafx"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX"/>
+	<classpathentry kind="lib" path="C:/Users/ayoub/OneDrive/Bureau/MYSQLjavaConnector/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar"/>
+	<classpathentry kind="output" path="out/production/Login"/>
+</classpath>

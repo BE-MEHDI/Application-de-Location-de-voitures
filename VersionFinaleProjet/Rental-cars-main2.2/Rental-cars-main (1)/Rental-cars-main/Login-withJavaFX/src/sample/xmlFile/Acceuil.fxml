@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainInterface" prefHeight="542.0" prefWidth="1000.0" style="-fx-background-color: #4F5050;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="307.0" fitWidth="713.0" layoutX="137.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/acceuilvoiture.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="157.0" layoutY="25.0" prefHeight="106.0" prefWidth="720.0" text="System de Gestion de Location De Voiture" textFill="#d4a81e">
+         <font>
+            <Font name="Arial" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
